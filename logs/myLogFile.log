@@ -1,0 +1,31 @@
+4/17/24, 9:07 AM	InstanceLoader	DatabaseModule dependencies initialized
+4/17/24, 9:07 AM	InstanceLoader	ThrottlerModule dependencies initialized
+4/17/24, 9:07 AM	InstanceLoader	MyLoggerModule dependencies initialized
+4/17/24, 9:07 AM	InstanceLoader	EmployeesModule dependencies initialized
+4/17/24, 9:07 AM	InstanceLoader	UsersModule dependencies initialized
+4/17/24, 9:07 AM	InstanceLoader	AppModule dependencies initialized
+4/17/24, 9:07 AM	RoutesResolver	AppController {/api}:
+4/17/24, 9:07 AM	RouterExplorer	Mapped {/api, GET} route
+4/17/24, 9:07 AM	RoutesResolver	UsersController {/api/users}:
+4/17/24, 9:07 AM	RouterExplorer	Mapped {/api/users, GET} route
+4/17/24, 9:07 AM	RouterExplorer	Mapped {/api/users/:id, GET} route
+4/17/24, 9:07 AM	RouterExplorer	Mapped {/api/users, POST} route
+4/17/24, 9:07 AM	RouterExplorer	Mapped {/api/users/:id, PATCH} route
+4/17/24, 9:07 AM	RouterExplorer	Mapped {/api/users/:id, DELETE} route
+4/17/24, 9:07 AM	RoutesResolver	EmployeesController {/api/employees}:
+4/17/24, 9:07 AM	RouterExplorer	Mapped {/api/employees, POST} route
+4/17/24, 9:07 AM	RouterExplorer	Mapped {/api/employees, GET} route
+4/17/24, 9:07 AM	RouterExplorer	Mapped {/api/employees/:id, GET} route
+4/17/24, 9:07 AM	RouterExplorer	Mapped {/api/employees/:id, PATCH} route
+4/17/24, 9:07 AM	RouterExplorer	Mapped {/api/employees/:id, DELETE} route
+4/17/24, 9:07 AM	NestApplication	Nest application successfully started
+4/17/24, 9:07 AM	NestFactory	Starting Nest application...
+4/17/24, 9:20 AM	AllExceptionsFilter	ThrottlerException: Too Many Requests
+4/17/24, 9:20 AM	AllExceptionsFilter	ThrottlerException: Too Many Requests
+4/17/24, 9:20 AM	AllExceptionsFilter	 Invalid `this.databaseService.employee.findMany()` invocation in /Users/stackhousesrl/Documents/StackHouse/nest-ts-tst/nest-ts-test/src/employees/employees.service.ts:17:52    14 }   15    16 async findAll(role?: "INTERN" | "ENGINEER" | "ADMIN") { → 17   if (role) return this.databaseService.employee.findMany({          where: {            role: "CACCA"                  ~~~~~~~          }        })  Invalid value for argument `role`. Expected Role.
+4/17/24, 10:05 AM	AllExceptionsFilter	 Invalid `this.databaseService.employee.findMany()` invocation in /Users/stackhousesrl/Documents/StackHouse/nest-ts-tst/nest-ts-test/src/employees/employees.service.ts:17:52    14 }   15    16 async findAll(role?: "INTERN" | "ENGINEER" | "ADMIN") { → 17   if (role) return this.databaseService.employee.findMany({          where: {            role: "CACCA"                  ~~~~~~~          }        })  Invalid value for argument `role`. Expected Role.
+4/17/24, 10:06 AM	EmployeesController	Request for ALL Employees	::ffff:127.0.0.1
+4/17/24, 10:06 AM	AllExceptionsFilter	 Invalid `this.databaseService.employee.findMany()` invocation in /Users/stackhousesrl/Documents/StackHouse/nest-ts-tst/nest-ts-test/src/employees/employees.service.ts:17:52    14 }   15    16 async findAll(role?: "INTERN" | "ENGINEER" | "ADMIN") { → 17   if (role) return this.databaseService.employee.findMany({          where: {            role: "CACCA"                  ~~~~~~~          }        })  Invalid value for argument `role`. Expected Role.
+4/17/24, 10:09 AM	AllExceptionsFilter	[object Object]
+4/17/24, 10:09 AM	AllExceptionsFilter	 Invalid `this.databaseService.employee.findUnique()` invocation in /Users/stackhousesrl/Documents/StackHouse/nest-ts-tst/nest-ts-test/src/employees/employees.service.ts:26:42    23 }   24    25 async findOne(id: number) { → 26   return this.databaseService.employee.findUnique({          where: {        +   id: Int          }        })  Argument `id` is missing.
+4/17/24, 10:09 AM	AllExceptionsFilter	 Invalid `this.databaseService.employee.findUnique()` invocation in /Users/stackhousesrl/Documents/StackHouse/nest-ts-tst/nest-ts-test/src/employees/employees.service.ts:26:42    23 }   24    25 async findOne(id: number) { → 26   return this.databaseService.employee.findUnique({          where: {        +   id: Int          }        })  Argument `id` is missing.
